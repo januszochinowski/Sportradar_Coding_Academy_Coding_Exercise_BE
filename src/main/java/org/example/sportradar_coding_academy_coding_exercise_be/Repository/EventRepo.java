@@ -15,8 +15,8 @@ public interface EventRepo extends JpaRepository<Event,Long> {
 
     Page<Event> findAll(Pageable pageable);
 
-    @Query("SELECT e FROM Event e WHERE e.place = :place")
-    Page<Event> findByPlace(Place place, Pageable pageable);
+    @Query("SELECT e FROM Event e WHERE e.place.name = :placeName")
+    Page<Event> findByPlace(String placeName, Pageable pageable);
 
     @Query("SELECT e FROM Event e WHERE e.eventDate >= :after ")
     Page<Event> findByAfter(LocalDate after, Pageable pageable);

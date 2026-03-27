@@ -41,8 +41,8 @@ public class EventService {
        return repo.findAll(PageRequest.of(page, size,sort)).getContent();
     }
 
-    public List<Event> getByPlace(Place place, int page, int size) {
-        return repo.findByPlace(place, PageRequest.of(page, size,sort)).getContent();
+    public List<Event> getByPlace(String placeName, int page, int size) {
+        return repo.findByPlace(placeName, PageRequest.of(page, size,sort)).getContent();
     }
 
     public List<Event> getByAfter(LocalDate after, int page, int size) {

@@ -109,8 +109,8 @@ class EventRepoTest {
     @Test
     void findByPlace() {
 
-        assertArrayEquals(new Event[] {event},repo.findByPlace(place, pageRequest).getContent().toArray());
-        assertArrayEquals(new Event[]{event2},repo.findByPlace(place2, pageRequest).getContent().toArray());
+        assertArrayEquals(new Event[] {event},repo.findByPlace(place.getName(), pageRequest).getContent().toArray());
+        assertArrayEquals(new Event[]{event2},repo.findByPlace(place2.getName(), pageRequest).getContent().toArray());
 
     }
 
