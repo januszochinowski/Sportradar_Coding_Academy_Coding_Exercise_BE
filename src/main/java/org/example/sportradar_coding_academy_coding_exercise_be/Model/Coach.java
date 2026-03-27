@@ -1,4 +1,4 @@
-package Model;
+package org.example.sportradar_coding_academy_coding_exercise_be.Model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

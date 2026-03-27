@@ -1,9 +1,8 @@
-package Repository;
+package org.example.sportradar_coding_academy_coding_exercise_be.Repository;
 
-import Model.Coach;
+import org.example.sportradar_coding_academy_coding_exercise_be.Model.Coach;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.RequestHeader;
 
 @Repository
 public interface CoachRepo extends JpaRepository<Coach,Long> {

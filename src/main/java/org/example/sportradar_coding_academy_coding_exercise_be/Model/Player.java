@@ -1,7 +1,6 @@
-package Model;
+package org.example.sportradar_coding_academy_coding_exercise_be.Model;
 
 import jakarta.persistence.*;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

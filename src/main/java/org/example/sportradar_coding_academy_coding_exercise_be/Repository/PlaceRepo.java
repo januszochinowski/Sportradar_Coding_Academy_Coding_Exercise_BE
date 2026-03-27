@@ -1,7 +1,6 @@
-package Repository;
+package org.example.sportradar_coding_academy_coding_exercise_be.Repository;
 
-import Model.Coach;
-import Model.Place;
+import org.example.sportradar_coding_academy_coding_exercise_be.Model.Place;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

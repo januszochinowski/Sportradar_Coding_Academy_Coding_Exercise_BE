@@ -1,4 +1,4 @@
-package Model;
+package org.example.sportradar_coding_academy_coding_exercise_be.Model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -11,7 +11,7 @@ import org.hibernate.annotations.DynamicUpdate;
 @AllArgsConstructor
 @DynamicUpdate
 @Entity
-public class Team {
+public class Place {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,11 +22,8 @@ public class Team {
     private String name;
 
     @Column(nullable = false)
+    private Integer max_Capacity;
+
+    @Column(nullable = false)
     private String city;
-
-    @OneToOne
-    @JoinColumn(name="_forgeinkey_coach_id")
-    private Coach  coach;
-
-
 }
